@@ -3,5 +3,15 @@
 
 <head>
     <title>Brandon's First Flask App</title>
+    <!-- this Flask jinja2 links our index page to styling sheet. -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
-<p>THIS IS MY ROOT PAGE!</p>
+
+<h1>THIS IS MY ROOT PAGE!</h1>
+
+<body>
+
+    <p>Brandon was here!</p>
+
+</body>
