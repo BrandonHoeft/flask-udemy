@@ -5,7 +5,8 @@
     <title>Brandon's First Flask App</title>
     <!-- this Flask jinja2 links our index page to styling sheet. -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-
+    <!-- link to pure.css stylesheets instead of our local ones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
 </head>
 
 <h1>THIS IS MY ROOT PAGE!</h1>
@@ -13,5 +14,8 @@
 <body class="body_style">
 
     <p>Brandon was here!</p>
+
+    <a class="pure-button" href="#">A Pure Button</a>
+    <button class="pure-button">A Pure Button</button>
 
 </body>
