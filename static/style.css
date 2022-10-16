@@ -1,3 +1,10 @@
 h1 {
     text-align: center;
 }
+
+.body_style {
+    padding-left: 100px;
+    paddng-right: 100px;
+    text-align: left;
+    border: 2px solid cadetblue;
+}
