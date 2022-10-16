@@ -20,6 +20,8 @@
     <form class="pure-form" method="POST" action="/"> <!-- action= where to take you -->
     Name: <br>
     <input type="text" name="username"><br> <!-- name arg is a tag field. IMPORTANT for referencing elsewhere! -->
+    Food: <br>
+    <input type="text" name="fave_food"><br>
     <button type="submit" class="pure-button pure-button-primary" value="Submit">Submit</button>
     </form>
 </div>
@@ -29,6 +31,9 @@
 <div>
     {% if name_entered %} <!-- only True if someone passed and hit submit button, creating the `posted_name` variable in app.py -->
         <p> Welcome to my site, {{ name_entered }}! </p> <!-- param substitution from app.py happens in jinja2 template here -->
+    {% endif %}
+    {% if food_entered %} <!-- only True if someone passed and hit submit button, creating the `posted_name` variable in app.py -->
+        <p> Your favorite food is {{ food_entered }}</p> <!-- param substitution from app.py happens in jinja2 template here -->
     {% endif %}
 </div>
 
